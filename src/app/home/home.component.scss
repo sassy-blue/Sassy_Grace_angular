@@ -1,31 +1,48 @@
 /* Custom Styles for the Portfolio */
-
-#hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
+.container {
+    max-width: 1200px;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .card-subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .card-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  .img-fluid {
+    border-radius: 10px;
+  }
+  
+  .card-body {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
     text-align: center;
-}
-
-#hero h1 {
-    font-size: 3rem;
-}
-
-#hero p {
-    font-size: 1.5rem;
-}
-
-footer .social-links a {
-    color: #ee3838;
-    text-decoration: none;
-}
-
-footer .social-links a:hover {
-    color: #ddd;
-}
-h1 {
-    text-align: center;
-    color: #89aefd;
-    text-decoration: dashed;
-}
+    text-emphasis-color: blue;
+  }
