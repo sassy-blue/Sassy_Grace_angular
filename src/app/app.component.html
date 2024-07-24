@@ -1,6 +1,4 @@
-<nav
-    class="navbar navbar-expand-sm navbar-light bg-light"
->
+<nav class="navbar navbar-expand-sm navbar-light bg-info">
     <div class="container">
         <a class="navbar-brand" href="#">Manases Mutembei</a>
         <button
@@ -17,17 +15,14 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" routerLink="home" aria-current="page"
-                    >Home
-                        <span class="visually-hidden">(current)</span></a
-                    >
+                    <a class="nav-link active"  aria-current="page"
+                    routerLink="" routerLinkActive="active"> <i class="bi bi-person"></i>Profile </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#" routerLink="/contacts" routerLinkActive="active">Link</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a
-                        class="nav-link dropdown-toggle"
+                    <a class="nav-link dropdown-toggle"
                         href="#"
                         id="dropdownId"
                         data-bs-toggle="dropdown"
@@ -40,10 +35,10 @@
                         aria-labelledby="dropdownId"
                     >
                         <a class="dropdown-item" href="#"
-                            >Action 1</a
+                            >Insurance Quotation</a
                         >
                         <a class="dropdown-item" href="#"
-                            >Action 2</a
+                            >Vehicle Assessment</a
                         >
                     </div>
                 </li>
@@ -55,7 +50,7 @@
                     placeholder="Search"
                 />
                 <button
-                    class="btn btn-outline-success my-2 my-sm-0"
+                    class="btn btn-success my-2 my-sm-0"
                     type="submit"
                 >
                     Search
@@ -64,6 +59,7 @@
         </div>
     </div>
 </nav>
+
 
 
 <router-outlet></router-outlet>
