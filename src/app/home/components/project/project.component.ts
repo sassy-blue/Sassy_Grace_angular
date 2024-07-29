@@ -11,14 +11,19 @@ import { Component } from '@angular/core';
 export class ProjectComponent {
   projects = [
     {
-      title: 'Project 1',
-      description: 'Description of project 1.',
+      title: 'Vehicle assessment and inspection',
+      description: 'It is a project built to help assessor consolidate their assessment data and generate a comprehensive report for submission to insurance companies.',
       image: '/inspect.jpeg'
     },
     {
-      title: 'Project 2',
-      description: 'Description of project 2.',
+      title: 'Insurance quotation system',
+      description: 'Its a system built to help insurance companies automate issuing of quotations to their clients. ',
       image: 'quot.png'
+    },
+    {
+      title: 'Portfolio Template',
+      description: 'Its a personal portfolio website that is built with all needed features for easy customization to specific requirements. ',
+      image: 'portfolio.png'
     }
   
   ];
