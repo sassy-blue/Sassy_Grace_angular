@@ -6,12 +6,12 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class NewsService {
-  private apiKey = '60d2f61d1ee948de91f7eecfac0298ce';
-  private apiUrl = 'https://newsapi.org/v2/everything';
+  private apiKey = 'mfnjajlCcOh4JG7E720Sp-QhfDHUDKSfjvGb3YqhrQcey7sJ';
+  private apiUrl = 'https://api.currentsapi.services/v1/latest-news';
 
   constructor(private http: HttpClient) { }
 
-  getNews(query: string): Observable<any> {
-    return this.http.get<any>(`${this.apiUrl}?q=${query}&apiKey=${this.apiKey}`);
+  getNews(): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}?language=en&apiKey=${this.apiKey}`);
   }
 }

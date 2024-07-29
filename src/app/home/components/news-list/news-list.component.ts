@@ -24,14 +24,14 @@ export class NewsListComponent implements OnInit{
   }
 
   fetchNews(): void {
-    this.newsService.getNews('finance').subscribe(response => {
-      this.articles = response.articles;
+    this.newsService.getNews().subscribe(response => {
+      this.articles = response.news;
     });
   }
   searchNews(): void {
     debugger
-    this.newsService.getNews(this.query).subscribe((response: any) => {
-      this.articles = response.articles;
+    this.newsService.getNews().subscribe((response: any) => {
+      this.articles = response.news;
     });
   }
 
