@@ -1,0 +1,26 @@
+<div>
+  <h2>News</h2>
+  <div>
+    <input ngModel="query" placeholder="Search news" (click)="searchNews()" />
+    <button (click)="searchNews()">Search</button>
+  </div>
+  <div class="news-container">
+    <mat-card *ngFor="let article of articles" class="news-card">
+      <img mat-card-image [src]="article.urlToImage" alt="{{ article.title }}">
+      <mat-card-header>
+        <mat-card-title>{{ article.title }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{ article.description }}</p>
+      </mat-card-content>
+      <br>
+      <mat-card-content>
+        <p>Author {{ article.Author }}</p>
+        <p>Published On {{ article.publishedAt | date:'medium' }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <a [href]="article.url" mat-button target="_blank">Read more</a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

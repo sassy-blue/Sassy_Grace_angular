@@ -7,30 +7,10 @@
 </head>
 <body>
     <div class="contacts-container">
-        <div class="contact-card">
-            <img src="/twitter.png" alt="Twitter Icon">
-            <h3>Twitter</h3>
-            <a href="https://x.com/G9teru" target="_blank">Follow me on Twitter</a>
-        </div>
-        <div class="contact-card">
-            <img src="/link.png" alt="LinkedIn Icon">
-            <h3>LinkedIn</h3>
-            <a href="https://www.linkedin.com/in/manases-mutembei-49b011201" target="_blank">Connect on LinkedIn</a>
-        </div>
-        <div class="contact-card">
-            <img src="/git.jpeg" alt="GitHub Icon">
-            <h3>GitHub</h3>
-            <a href="https://github.com/manasesmutembei11" target="_blank">Visit my GitHub</a>
-        </div>
-        <div class="contact-card">
-            <img src="/whatsap.png" alt="WhatsApp Icon">
-            <h3>WhatsApp</h3>
-            <a href="https://wa.me/+254768802661" target="_blank">Message on WhatsApp</a>
-        </div>
-        <div class="contact-card">
-            <img src="/gmail.png" alt="Gmail Icon">
-            <h3>Email</h3>
-            <a href="mailto:manasesmutembei11@gmail.com" target="_blank">Send me an Email</a>
+        <div class="contact-card" *ngFor="let contact of contacts">
+            <img src="{{contact.image}}" alt="Twitter Icon">
+            <h3>{{contact.name}}</h3>
+            <a href="{{contact.link}}" target="_blank">{{contact.message}}</a>
         </div>
     </div>
 </body>
