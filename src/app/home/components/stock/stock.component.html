@@ -1,0 +1,18 @@
+<div>
+  <div class="news-container">
+    <mat-card *ngFor="let article of newsData" class="news-card">
+      <img mat-card-image [src]="article.banner_image" alt="{{ article.title }}">
+      <mat-card-header>
+        <mat-card-title>{{ article.title }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{ article.summary }}</p>
+        <p><strong>Overall Sentiment:</strong> {{ article.overall_sentiment_label }} ({{ article.overall_sentiment_score }})</p>
+        <p><strong>Category:</strong> {{ article.category_within_source }}</p>
+        <p><strong>Author:</strong> {{ article.authors.join(', ') }}</p>
+        <p><strong>Published On:</strong> {{ article.time_published | date:'medium' }}</p>
+      </mat-card-content>
+<a [href]="article.url" class="button">Read more</a>
+    </mat-card>
+  </div>
+</div>

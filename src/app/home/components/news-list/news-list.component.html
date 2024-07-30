@@ -15,9 +15,8 @@
         <p>Author: {{ article.author }}</p>
         <p>Published On: {{ article.published | date:'medium' }}</p>
       </mat-card-content>
-      <mat-card-actions>
-        <a [href]="article.url" mat-button target="_blank">Read more</a>
-      </mat-card-actions>
+        <a [href]="article.url" class="button">Read more</a>
     </mat-card>
   </div>
+  <app-stock></app-stock>
 </div>
